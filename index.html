@@ -1,39 +1,13 @@
-<html>
+<!DOCTYPE html>
 <head>
-  <title>Hasya Katta Official TV</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+<title>Hasya Katta Official Live</title>
+<meta name="description" content="Hasya Katta Official Live">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta type="text" name="Hasya Katta Official Live By Smit Shetye">
+  <script src="https://il.suite.st/app/571672de-8975-4b0e-97ad-24eab4df909d.js"></script>
 </head>
 <body>
- <iframe width="640" height="619" src="https://www.youtube.com/embed/i5bESdP6CEA" title="Hasya Katta Official TV " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- <iframe  width="100%" height="285px" src="https://marathi.abplive.com/sharewidget/live-tv.html" frameBorder="0" scrolling="no" loading="lazy"></iframe>
- <iframe width="100%" height="721px" src="https://marathi.abplive.com/sharewidget/latest-news.html" frameBorder="0" scrolling="no"   loading="lazy"></iframe>
- <iframe width="100%" height="721px" src="https://marathi.abplive.com/sharewidget/maharashtra.html"  frameBorder="0" scrolling="no" loading="lazy"> 
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<!-- Or if you want a more recent canary version -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script> -->
-<video id="video"></video>
-<script>
-  var video = document.getElementById('video');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('https://stream.zeno.fm/grpa985az98uv.m3u');
-    hls.attachMedia(video);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8';
-    video.addEventListener('loadedmetadata',function() {
-      video.play();
-    });
-  }
-</script>
 </body>
 </html>
